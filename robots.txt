@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vridhi.ink/sitemap.xml
+Sitemap: https://vridhi.ink/news-sitemap.xml

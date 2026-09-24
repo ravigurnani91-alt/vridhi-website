@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://vridhi.ink/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://vridhi.ink/about/index.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://vridhi.ink/blog/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vridhi.ink/blog/sip-vs-lumpsum-investment.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/blog/how-to-apply-for-ipo-online.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/blog/gold-investment-guide-india.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/blog/sensex-vs-nifty-difference.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/blog/elss-tax-saving-mutual-funds.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://vridhi.ink/blog/ppf-vs-elss-tax-saving.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/calculators/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vridhi.ink/calculators/personal-loan-emi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://vridhi.ink/calculators/home-loan-emi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
