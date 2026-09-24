@@ -423,7 +423,16 @@
 </div>
 
 <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script>
-<tv-ticker-tape symbols="BSE:SENSEX,NSE:NIFTY,NSE:BANKNIFTY,TVC:USOIL,FOREXCOM:SPXUSD,FOREXCOM:NSXUSD" style="display:block;border-bottom:1px solid var(--border);"></tv-ticker-tape>
+<tv-ticker-tape symbols="BSE:SENSEX,TVC:USOIL,FOREXCOM:SPXUSD,FOREXCOM:NSXUSD" style="display:block;border-bottom:1px solid var(--border);"></tv-ticker-tape>
+<!-- NSE:NIFTY and NSE:BANKNIFTY were removed from this ticker: TradingView's free
+     embeddable widget shows "This symbol is only available on TradingView" for these,
+     which is a data-licensing restriction on their end (real-time NSE index data is
+     commercially licensed), not something fixable in our code. BSE:SENSEX works fine
+     and is kept. If TradingView changes this in future, add them back:
+     NSE:NIFTY,NSE:BANKNIFTY -->
+<div class="wrap" style="padding-top:10px;">
+  <p class="data-note" style="text-align:center;">Nifty 50 and Bank Nifty currently have no free live-streaming source available (a TradingView data-licensing limitation) — Sensex above is live. <a href="#pulse">Latest levels for all three are in Market Pulse below.</a></p>
+</div>
 <!-- Confirmed working format as of Aug 2026, copied directly from TradingView's live
      configurator at tradingview.com/widget-docs/widgets/tickers/ticker-tape -->
 
@@ -439,7 +448,7 @@
       </div>
       <div class="data-status" id="dataStatus">Loading data status…</div>
       <div class="hero-trust">
-        <span>Sensex, Nifty &amp; Bank Nifty are live, powered by TradingView*</span>
+        <span>Sensex is live, powered by TradingView*</span>
         <span>Gold, silver &amp; USD/INR auto-refresh from live feeds*</span>
       </div>
     </div>
@@ -857,8 +866,8 @@ function updateDataStatusUI(){
   const status = document.getElementById('dataStatus');
   const disc = document.getElementById('dataDisclaimer');
   eyebrow.textContent = 'Live'; eyebrow.classList.add('live');
-  status.textContent = 'Sensex, Nifty & Bank Nifty above are live via TradingView. Gold, silver, Bitcoin & USD/INR below auto-refresh from live feeds.';
-  disc.innerHTML = '<b>Data note:</b> Sensex, Nifty 50, and Bank Nifty in the ticker above are genuinely live, powered by TradingView. Gold, silver, and Bitcoin auto-refresh from live global spot prices; USD/INR auto-refreshes from a free public FX API (open.er-api.com) which itself updates about once a day, not tick-by-tick. Crude oil and per-stock movers below reflect the latest verified data. Today\u2019s Movers section is also genuinely live via TradingView.';
+  status.textContent = 'Sensex above is live via TradingView. Gold, silver, Bitcoin & USD/INR below auto-refresh from live feeds. Nifty/Bank Nifty have no free live source (TradingView data-licensing limit).';
+  disc.innerHTML = '<b>Data note:</b> Sensex in the ticker above is genuinely live, powered by TradingView. Nifty 50 and Bank Nifty are not shown live in the ticker because TradingView\u2019s free embeddable widget restricts real-time access to these specific indices (a data-licensing limitation on their end, not something fixable in our code) &mdash; their latest verified levels are in Market Pulse below instead. Gold, silver, and Bitcoin auto-refresh from live global spot prices; USD/INR auto-refreshes from a free public FX API (open.er-api.com) which itself updates about once a day, not tick-by-tick. Today\u2019s Movers section below is genuinely live via TradingView.';
 }
 updateDataStatusUI();
 
@@ -1405,6 +1414,7 @@ const SEARCH_INDEX = [
   {tag:'Blog', title:'Gold Investment in India', desc:'Physical, digital, SGB, or Gold ETF?', url:'/blog/gold-investment-guide-india.html'},
   {tag:'Blog', title:'Sensex vs Nifty', desc:"What's the difference and why it matters.", url:'/blog/sensex-vs-nifty-difference.html'},
   {tag:'Blog', title:'ELSS Mutual Funds', desc:'Save tax under Section 80C.', url:'/blog/elss-tax-saving-mutual-funds.html'},
+  {tag:'Blog', title:'PPF vs ELSS', desc:'Guaranteed 7.1% vs market-linked growth, compared.', url:'/blog/ppf-vs-elss-tax-saving.html'},
   {tag:'FAQ', title:'Common Investing & Loan Questions', desc:'SIP, IPO, EMI, ELSS, Nifty explained.', url:'/faq/index.html'},
   {tag:'Legal', title:'Privacy Policy', desc:'How we handle your data.', url:'/legal/privacy-policy.html'},
   {tag:'Legal', title:'Terms of Service', desc:'Terms for using Vridhi.', url:'/legal/terms-of-service.html'},
