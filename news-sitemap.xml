@@ -2,23 +2,50 @@
 <!--
   Google News sitemap.
   IMPORTANT — keep this fresh: Google News only considers articles published
-  in the LAST 2 DAYS. Every time a new dated article (e.g. a daily Morning
-  Take) is published, add it here and remove any <url> entry older than 48
-  hours. This file is not "set and forget" — it needs the same publishing
-  cadence as the articles themselves. Max 1,000 URLs.
+  in the LAST 2 DAYS. Every time a new dated article is published, add it here
+  and remove any <url> entry older than 48 hours. Max 1,000 URLs.
   Reference: https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://vridhi.ink/blog/sip-vs-lumpsum-investment.html</loc>
+    <loc>https://vridhi.ink/news/oil-import-bill-rupee.html</loc>
     <news:news>
-      <news:publication>
-        <news:name>Vridhi</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-18T09:00:00+05:30</news:publication_date>
-      <news:title>SIP vs Lumpsum Investment: Which Is Better in 2026?</news:title>
+      <news:publication><news:name>Vridhi</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-09-26T09:00:00+05:30</news:publication_date>
+      <news:title>Oil Just Cost India $64 Billion — Guess Who's Actually Paying?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://vridhi.ink/news/us-india-trade-talks-stocks.html</loc>
+    <news:news>
+      <news:publication><news:name>Vridhi</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-09-26T09:00:00+05:30</news:publication_date>
+      <news:title>US-India Trade Talks Are Back — Which Sectors Move First?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://vridhi.ink/news/china-slowdown-india-manufacturing.html</loc>
+    <news:news>
+      <news:publication><news:name>Vridhi</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-09-26T09:00:00+05:30</news:publication_date>
+      <news:title>China Is Slowing Down — So Why Are These Sectors Speeding Up?</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://vridhi.ink/news/gold-record-high-history.html</loc>
+    <news:news>
+      <news:publication><news:name>Vridhi</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-09-26T09:00:00+05:30</news:publication_date>
+      <news:title>Gold Just Hit a Record — Here's What Happened Last Time</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://vridhi.ink/news/fed-rate-cut-sip-fii.html</loc>
+    <news:news>
+      <news:publication><news:name>Vridhi</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-09-26T09:00:00+05:30</news:publication_date>
+      <news:title>The Fed Just Hinted at a Rate Cut — Does Your SIP Notice?</news:title>
     </news:news>
   </url>
 </urlset>
