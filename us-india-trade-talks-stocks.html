@@ -71,6 +71,9 @@ footer{border-top:1px solid var(--border);padding:36px 0;}
 <style>
 .news-hero{width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--surface);border:1px solid var(--border);margin:18px 0 28px;}
 .news-hero svg{width:100%;height:100%;display:block;}
+.news-hero img{width:100%;height:100%;display:block;object-fit:cover;}
+.news-hero.img-missing{display:flex;align-items:center;justify-content:center;}
+.news-hero.img-missing::after{content:'Image pending';font-family:var(--font-mono);font-size:12px;color:var(--text-faint);}
 .stat-callout{background:var(--surface-3);border:1px solid var(--border);border-radius:14px;padding:24px 26px;margin:24px 0 30px;}
 .stat-callout .num{font-family:var(--font-display);font-size:clamp(32px,5vw,44px);font-weight:600;color:var(--gold);line-height:1;}
 .stat-callout .cap{font-size:13.5px;color:var(--text-muted);margin-top:8px;}
@@ -111,7 +114,7 @@ footer{border-top:1px solid var(--border);padding:36px 0;}
 <div class="meta-line">Published 26 September 2026 &middot; 3 min read</div>
 <div class="byline">By <a href="/about/index.html">Ravi Gurnani</a></div>
 
-<div class="news-hero"><svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><path d="M100 300 L100 260 L 220 200 L 330 240 L 450 150 L 560 190" fill="none" stroke="#35E0B0" stroke-width="4" stroke-linejoin="round"/><circle cx="220" cy="200" r="6" fill="#35E0B0"/><circle cx="450" cy="150" r="6" fill="#35E0B0"/><rect x="140" y="80" width="70" height="46" rx="4" fill="none" stroke="#9C8CFF" stroke-width="3"/><text x="175" y="108" font-family="IBM Plex Mono" font-size="14" fill="#9C8CFF" text-anchor="middle">US</text><rect x="490" y="80" width="70" height="46" rx="4" fill="none" stroke="#FF9D42" stroke-width="3"/><text x="525" y="108" font-family="IBM Plex Mono" font-size="14" fill="#FF9D42" text-anchor="middle">IN</text></svg></div>
+<div class="news-hero"><img src="/images/news/us-india-trade.jpg" alt="US and India flags with a rising trade chart between them" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
 
 <div class="stat-callout">
   <div class="num">3 sectors</div>

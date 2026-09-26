@@ -316,6 +316,9 @@
   .slide-card:hover{transform:translateY(-3px);border-color:var(--text-faint);text-decoration:none;}
   .slide-img{aspect-ratio:16/9;background:var(--ink);}
   .slide-img svg{width:100%;height:100%;display:block;}
+  .slide-img img{width:100%;height:100%;display:block;object-fit:cover;}
+  .slide-img.img-missing{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--surface-2),var(--surface));}
+  .slide-img.img-missing::after{content:'Image pending';font-family:var(--font-mono);font-size:11px;color:var(--text-faint);}
   .slide-body{padding:14px 16px 18px;}
   .slide-tag{font-family:var(--font-mono);font-size:10.5px;color:var(--gold);text-transform:uppercase;letter-spacing:0.06em;}
   .slide-body h3{font-size:15px;line-height:1.35;margin-top:8px;color:var(--text);font-family:var(--font-body);font-weight:600;}
@@ -513,23 +516,23 @@
     </div>
     <div class="news-slider" id="newsSlider">
       <a class="slide-card" href="/news/oil-import-bill-rupee.html">
-        <div class="slide-img"><svg role="img" aria-label="Illustration of an oil barrel with rupee coins, representing crude oil's impact on India's import bill" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><rect x="270" y="120" width="160" height="200" rx="16" fill="none" stroke="#FF9D42" stroke-width="4"/><rect x="290" y="90" width="120" height="30" rx="8" fill="none" stroke="#FF9D42" stroke-width="4"/><circle cx="470" cy="260" r="22" fill="#3D2711" stroke="#FF9D42" stroke-width="3"/><text x="470" y="267" font-family="IBM Plex Mono" font-size="18" fill="#FF9D42" text-anchor="middle">₹</text><circle cx="520" cy="220" r="16" fill="#3D2711" stroke="#FF9D42" stroke-width="3"/><text x="520" y="226" font-family="IBM Plex Mono" font-size="13" fill="#FF9D42" text-anchor="middle">₹</text><circle cx="540" cy="280" r="14" fill="#3D2711" stroke="#FF9D42" stroke-width="3"/><text x="540" y="285" font-family="IBM Plex Mono" font-size="11" fill="#FF9D42" text-anchor="middle">₹</text></svg></div>
+        <div class="slide-img"><img src="/images/news/oil-import-bill.jpg" alt="Illustration of an oil barrel with rupee coins, representing crude oil's impact on India's import bill" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
         <div class="slide-body"><span class="slide-tag">Commodities</span><h3>Oil Just Cost India $64 Billion — Guess Who's Actually Paying?</h3></div>
       </a>
       <a class="slide-card" href="/news/us-india-trade-talks-stocks.html">
-        <div class="slide-img"><svg role="img" aria-label="US and India flags with a rising trade chart between them" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><path d="M100 300 L100 260 L 220 200 L 330 240 L 450 150 L 560 190" fill="none" stroke="#35E0B0" stroke-width="4" stroke-linejoin="round"/><circle cx="220" cy="200" r="6" fill="#35E0B0"/><circle cx="450" cy="150" r="6" fill="#35E0B0"/><rect x="140" y="80" width="70" height="46" rx="4" fill="none" stroke="#9C8CFF" stroke-width="3"/><text x="175" y="108" font-family="IBM Plex Mono" font-size="14" fill="#9C8CFF" text-anchor="middle">US</text><rect x="490" y="80" width="70" height="46" rx="4" fill="none" stroke="#FF9D42" stroke-width="3"/><text x="525" y="108" font-family="IBM Plex Mono" font-size="14" fill="#FF9D42" text-anchor="middle">IN</text></svg></div>
+        <div class="slide-img"><img src="/images/news/us-india-trade.jpg" alt="US and India flags with a rising trade chart between them" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
         <div class="slide-body"><span class="slide-tag">Global Trade</span><h3>US-India Trade Talks Are Back — Which Sectors Move First?</h3></div>
       </a>
       <a class="slide-card" href="/news/china-slowdown-india-manufacturing.html">
-        <div class="slide-img"><svg role="img" aria-label="Two circular gears, one slowing and one speeding up, representing China's slowdown versus India's manufacturing growth" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><circle cx="220" cy="210" r="70" fill="none" stroke="#FF5D77" stroke-width="4"/><circle cx="220" cy="210" r="20" fill="#331621" stroke="#FF5D77" stroke-width="3"/><circle cx="470" cy="200" r="90" fill="none" stroke="#35E0B0" stroke-width="4"/><circle cx="470" cy="200" r="26" fill="#0F2B22" stroke="#35E0B0" stroke-width="3"/></svg></div>
+        <div class="slide-img"><img src="/images/news/china-slowdown.jpg" alt="Two circular gears, one slowing and one speeding up, representing China's slowdown versus India's manufacturing growth" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
         <div class="slide-body"><span class="slide-tag">Global Markets</span><h3>China Is Slowing Down — So Why Are These Sectors Speeding Up?</h3></div>
       </a>
       <a class="slide-card" href="/news/gold-record-high-history.html">
-        <div class="slide-img"><svg role="img" aria-label="A gold bar with an upward price trend line" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><rect x="200" y="160" width="300" height="120" rx="10" fill="#3D2711" stroke="#FF9D42" stroke-width="4"/><path d="M230 240 L 300 200 L 360 225 L 440 170 L 480 190" fill="none" stroke="#FF9D42" stroke-width="4" stroke-linejoin="round"/><circle cx="480" cy="190" r="6" fill="#FF9D42"/></svg></div>
+        <div class="slide-img"><img src="/images/news/gold-record-high.jpg" alt="A gold bar with an upward price trend line" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
         <div class="slide-body"><span class="slide-tag">Commodities</span><h3>Gold Just Hit a Record — Here's What Happened Last Time</h3></div>
       </a>
       <a class="slide-card" href="/news/fed-rate-cut-sip-fii.html">
-        <div class="slide-img"><svg role="img" aria-label="Federal Reserve building silhouette beside a rupee coin with a growth sprout" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg"><rect width="700" height="400" fill="#1B1530"/><rect x="230" y="150" width="14" height="110" fill="#9C8CFF"/><rect x="270" y="150" width="14" height="110" fill="#9C8CFF"/><rect x="310" y="150" width="14" height="110" fill="#9C8CFF"/><rect x="350" y="150" width="14" height="110" fill="#9C8CFF"/><path d="M220 150 L 340 100 L 460 150 Z" fill="none" stroke="#9C8CFF" stroke-width="4" stroke-linejoin="round"/><rect x="210" y="260" width="260" height="16" fill="#9C8CFF"/><circle cx="500" cy="255" r="18" fill="#3D2711" stroke="#FF9D42" stroke-width="3"/><text x="500" y="261" font-family="IBM Plex Mono" font-size="15" fill="#FF9D42" text-anchor="middle">₹</text><path d="M500 237 C 495 225, 505 220, 500 208" fill="none" stroke="#35E0B0" stroke-width="3"/></svg></div>
+        <div class="slide-img"><img src="/images/news/fed-rate-cut.jpg" alt="Federal Reserve building silhouette beside a rupee coin with a growth sprout" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-missing')"></div>
         <div class="slide-body"><span class="slide-tag">Global Markets</span><h3>The Fed Just Hinted at a Rate Cut — Does Your SIP Notice?</h3></div>
       </a>
     </div>
